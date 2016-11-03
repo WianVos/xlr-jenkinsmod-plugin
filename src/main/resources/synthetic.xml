@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<synthetic xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd" xmlns="http://www.xebialabs.com/deployit/synthetic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <type type="jenkins.BuildWithEncryptedParameters" extends="jenkins.Build">
+          <property name="scriptLocation" default="jenkins/BuildWithEncParams.py" hidden="true" />
+          <!--
+          <property name="iconLocation" default="jenkins/jenkins.png" hidden="true" />
+
+          <property name="jenkinsServer" category="input" label="Server" referenced-type="jenkins.Server" kind="ci" description="Jenkins server to connect to"/>
+          <property name="username" category="input" required="false" description="Overrides the password used to connect to the server"/>
+          <property name="password" password="true" category="input" required="false" description="Overrides the password used to connect to the server"/>
+          <property name="jobName" category="input" description="Name of the job to trigger; this job must be configured on the Jenkins server. If the job is located in one or more Jenkins folders, add  a 'job' segment between each folder."/>
+          <property name="jobParameters" category="input" size="large" required="false" description="If the Jenkins job expects parameters, provide them here, one parameter per line (for example,  paramName=paramValue)"/>
+
+          <property name="buildNumber" category="output" required="false" description="Build number of the triggered job"/>
+          <property name="buildStatus" category="output" required="false" description="Build status of the triggered job"/>
+          -->
+          
+          <property name="enc_key1" label="encrypted param key 1" category="input" required="false" description="key to the first encrypted parameter"/>
+          <property name="enc_param1" label="encrypted param 1" category="input" password="true" required="false" description="the first encrypted parameter"/>
+
+          <property name="enc_key2" label="encrypted param key 2" category="input" required="false" description="key to the second encrypted parameter"/>
+          <property name="enc_param2" label="encrypted param 2" category="input" password="true" required="false" description="the second encrypted parameter"/>
+
+          <property name="enc_key3" label="encrypted param key 3" category="input" required="false" description="key to the third encrypted parameter"/>
+          <property name="enc_param3" label="encrypted param 3" category="input" password="true" required="false" description="the third encrypted parameter"/>
+
+
+
+      </type>
+
+
+</synthetic>
